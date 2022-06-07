@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="70dp"
+    tools:context=".Presenter.catatan.CatatanInput">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_save_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:inputType="text"
+        android:textSize="50dp"
+        android:text="28/20/2001"/>
+
+    <EditText
+        android:id="@+id/et_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/judul_catatan" />
+
+    <EditText
+        android:id="@+id/et_kategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/kategori" />
+
+    <EditText
+        android:id="@+id/et_catatan"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top"
+        android:hint="@string/catatan" />
+
+
+</LinearLayout>
