@@ -24,7 +24,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CatatanFragment extends Fragment implements CatatanListener {
+public class CatatanFragment extends Fragment implements CatatanListener  {
 
     private RecyclerView rv_catatan;
     private List<Catatan> catatanList;
@@ -92,7 +92,10 @@ public class CatatanFragment extends Fragment implements CatatanListener {
 
     @Override
     public void onItemClicked(Catatan catatan) {
-        Toast.makeText(getActivity(),catatan.getTanggal(),Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(getActivity(),CatatanView.class);
+        intent.putExtra("catatan", catatan);
+        startActivity(intent);
+       // Toast.makeText(getActivity(),catatan.getTanggal(),Toast.LENGTH_SHORT).show();
         Log.i("testsukses","text Succes");
     }
 

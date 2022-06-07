@@ -1,8 +1,9 @@
 package com.alimuntung.a10119260uts.Model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Catatan {
+public class Catatan implements Serializable {
     private String id;
     private String tanggal;
     private String catatan;
@@ -20,11 +21,9 @@ public class Catatan {
     public String getId() {
         return id;
     }
-
     public String getTanggal() {
         return tanggal;
     }
-
     public String getCatatan() {
         return catatan;
     }
