@@ -2,6 +2,7 @@ package com.alimuntung.a10119260uts.Presenter.catatan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,7 +18,7 @@ import java.io.Serializable;
 public class CatatanView extends AppCompatActivity implements Serializable {
     private Catatan catatan;
     private TextView tv_tanggal,textCatatan,textJudul,textKategori;
-    private FloatingActionButton btnBack;
+    private FloatingActionButton btnBack,btnDelete,btnEdit;
    // private String tanggalskrg;
 
 
@@ -38,11 +39,30 @@ public class CatatanView extends AppCompatActivity implements Serializable {
         textCatatan.setText(catatan.getCatatan().toString());
         textJudul.setText(catatan.getJudul().toString());
         textKategori.setText(catatan.getKategori().toString());
+
         btnBack = findViewById(R.id.backviewButton);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+
+        btnDelete = findViewById(R.id.deleteButton);
+        btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //finish();
+            }
+        });
+
+        btnEdit = findViewById(R.id.editviewButton);
+        btnEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CatatanView.this, CatatanEdit.class);
+                intent.putExtra("catatan", catatan);
+                startActivity(intent);
             }
         });
 

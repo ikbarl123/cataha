@@ -3,6 +3,7 @@ package com.alimuntung.a10119260uts.Presenter.catatan;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -14,26 +15,29 @@ import com.alimuntung.a10119260uts.Model.ICatatanQuery;
 import com.alimuntung.a10119260uts.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.io.Serializable;
 import java.nio.charset.Charset;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
 
 
-public class CatatanEdit extends AppCompatActivity {
+public class CatatanEdit extends AppCompatActivity implements Serializable {
     private FloatingActionButton btnBack,btnSave;
     private EditText textCatatan,textJudul,textKategori;
     private TextView tv_tanggal;
     private String tanggalskrg;
     private ICatatanQuery catatanInterface;
+    private Catatan catatan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_catatan_edit);
+        getSupportActionBar().hide();
         //DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
        // tanggalskrg = LocalDate.now().format(formatter);
-        btnBack = findViewById(R.id.backButton);
+        btnBack = findViewById(R.id.backeditButton);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,31 +47,39 @@ public class CatatanEdit extends AppCompatActivity {
         });
 
         tv_tanggal=findViewById(R.id.tv_tanggal);
-        tv_tanggal.setText("");
-        btnBack = findViewById(R.id.saveButton);
-        btnBack.setOnClickListener(new View.OnClickListener() {
+        btnSave = findViewById(R.id.saveeditButton);
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 saveCatatan();
             }
         });
 
+        catatan = (Catatan) getIntent().getSerializableExtra("catatan");
+        tv_tanggal=  findViewById(R.id.tv_edittanggal);
+        textCatatan = findViewById(R.id.et_editcatatan);
+        textJudul= findViewById(R.id.et_editjudul);
+        textKategori= findViewById(R.id.et_editkategori);
+        Log.i("testsukses",catatan.getTanggal());
+
+        tv_tanggal.setText(catatan.getTanggal().toString());
+        textCatatan.setText(catatan.getCatatan().toString());
+        textJudul.setText(catatan.getJudul().toString());
+        textKategori.setText(catatan.getKategori().toString());
     }
 
     private void saveCatatan(){
         catatanInterface = new CatatanQuery(this);
-        textCatatan = findViewById(R.id.et_catatan);
-        textJudul= findViewById(R.id.et_judul);
-        textKategori= findViewById(R.id.et_kategori);
+
         Catatan updatedcatatan = new Catatan(
-                generateRandomText(),
+                catatan.getId(),
                 tanggalskrg,
                 textCatatan.getText().toString(),
                 textJudul.getText().toString(),//judul
                 textKategori.getText().toString()//kategori
         );
 
-        if(catatanInterface.create(updatedcatatan)){
+        if(catatanInterface.update(updatedcatatan)){
             Toast.makeText(CatatanEdit.this,"Catatan Berhasil Ditambahkan",Toast.LENGTH_SHORT ).show();
             finish();
         }
