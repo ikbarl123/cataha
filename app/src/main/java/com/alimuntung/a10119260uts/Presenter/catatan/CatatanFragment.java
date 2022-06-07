@@ -23,7 +23,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
 public class CatatanFragment extends Fragment implements CatatanListener  {
 
     private RecyclerView rv_catatan;

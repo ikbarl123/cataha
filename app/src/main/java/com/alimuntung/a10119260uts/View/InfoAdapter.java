@@ -6,7 +6,9 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.alimuntung.a10119260uts.Presenter.info.SlideInfoFragment;
-
+// Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
 public class InfoAdapter extends FragmentStateAdapter {
 
     private final Fragment[] mFragments = new Fragment[] {

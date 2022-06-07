@@ -14,16 +14,10 @@
         android:layout_width="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_height="match_parent">
-        <Button
-            android:id="@+id/nextinfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
 
+        <!--    Nama : Ikbar Laudza Alviansyah
+            Kelas : IF-7
+            NIM : 10119260-->
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/pager"
             android:layout_width="match_parent"

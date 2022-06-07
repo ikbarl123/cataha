@@ -15,11 +15,9 @@
         tools:context=".ProfileActivity"
         android:padding="30dp">
 
-        <!--  Ikbar Laudza Alviansyah
-                  IF-7
-                  10119260
-                  22 April 2022 -->
-
+        <!--    Nama : Ikbar Laudza Alviansyah
+         Kelas : IF-7
+         NIM : 10119260-->
 
         <TableLayout
             android:layout_width="match_parent"

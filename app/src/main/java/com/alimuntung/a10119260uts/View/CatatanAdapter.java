@@ -15,7 +15,9 @@ import com.alimuntung.a10119260uts.Model.CatatanListener;
 import com.alimuntung.a10119260uts.R;
 
 import java.util.List;
-
+// Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
 public class CatatanAdapter extends RecyclerView.Adapter<CatatanAdapter.CatatanViewHolder> {
     private List<Catatan> catatanList;
     private CatatanListener listener;

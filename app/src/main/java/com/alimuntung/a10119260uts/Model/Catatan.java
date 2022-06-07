@@ -34,3 +34,7 @@ public class Catatan implements Serializable {
         return kategori;
     }
 }
+
+// Ikbar Laudza Alviansyah
+// IF-7
+// 10119260

@@ -42,7 +42,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:clickable="true"
-                    android:src="@drawable/ic_baseline_save_24"
+                    android:src="@drawable/ic_baseline_delete_24"
+                    app:backgroundTint="@color/red"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -58,36 +59,66 @@
             android:text="28/20/2001"
             android:textSize="30dp" />
 
-        <TextView
-            android:id="@+id/et_viewjudul"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:hint="@string/judul_catatan" />
-
-        <TextView
-            android:id="@+id/et_viewkategori"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:hint="@string/kategori" />
-
-        <androidx.cardview.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/et_viewcatatan"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:gravity="top"
-                android:hint="@string/catatan" />
-        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:backgroundTint="@color/sokolat"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/et_viewjudul"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:hint="@string/judul_catatan" />
+
+                    <TextView
+                        android:id="@+id/et_viewkategori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/kategori" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/wgreen"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <!--    Nama : Ikbar Laudza Alviansyah
+                Kelas : IF-7
+                NIM : 10119260-->
+                <TextView
+                    android:id="@+id/et_viewcatatan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="top"
+                    android:hint="@string/catatan"
+                    android:padding="10dp" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <!--    Nama : Ikbar Laudza Alviansyah
+            Kelas : IF-7
+            NIM : 10119260-->
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -95,6 +126,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
+        android:backgroundTint="@color/purple_200"
         app:srcCompat="@drawable/ic_baseline_edit_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>

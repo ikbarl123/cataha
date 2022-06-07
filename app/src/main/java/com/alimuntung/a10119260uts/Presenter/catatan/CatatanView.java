@@ -19,7 +19,9 @@ import com.alimuntung.a10119260uts.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.Serializable;
-
+// Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
 public class CatatanView extends AppCompatActivity implements Serializable {
     private Catatan catatan;
     private TextView tv_tanggal,textCatatan,textJudul,textKategori;

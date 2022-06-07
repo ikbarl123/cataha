@@ -10,7 +10,9 @@
     android:paddingRight="20dp"
     android:paddingBottom="70dp"
     tools:context=".Presenter.catatan.CatatanInput">
-
+    <!--    Nama : Ikbar Laudza Alviansyah
+        Kelas : IF-7
+        NIM : 10119260-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +42,9 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
-
+    <!--    Nama : Ikbar Laudza Alviansyah
+        Kelas : IF-7
+        NIM : 10119260-->
 
     <TextView
         android:id="@+id/tv_tanggal"

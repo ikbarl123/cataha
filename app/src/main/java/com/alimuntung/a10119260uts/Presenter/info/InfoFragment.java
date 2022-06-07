@@ -16,7 +16,9 @@ import android.view.ViewGroup;
 import com.alimuntung.a10119260uts.R;
 import com.alimuntung.a10119260uts.View.InfoAdapter;
 
-
+// Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
 public class InfoFragment extends Fragment {
 
     private static final int PAGES=5;

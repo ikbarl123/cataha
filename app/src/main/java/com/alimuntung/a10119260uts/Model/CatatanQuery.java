@@ -10,7 +10,9 @@ public class CatatanQuery extends SQLiteOpenHelper implements ICatatanQuery {
     public CatatanQuery(Context context){
         super(context,"db_catatan",null,1);
     }
-
+    // Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
     @Override
     public void onCreate(SQLiteDatabase sql) {
     sql.execSQL("Create Table t_catatan(id TEXT, tanggal TEXT, catatan TEXT, judul TEXT, kategori TEXT)");

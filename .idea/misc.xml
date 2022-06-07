@@ -5,13 +5,15 @@
       <map>
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1" />
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1" />
+        <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1" />
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.301" />
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/activity_app.xml" value="0.16160081053698075" />
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/activity_app2.xml" value="0.16160081053698075" />
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/activity_catatan_edit.xml" value="0.13677536231884058" />
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/activity_catatan_input.xml" value="0.2" />
-        <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/activity_catatan_view.xml" value="0.13677536231884058" />
+        <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/activity_catatan_view.xml" value="0.22" />
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/activity_info.xml" value="0.16843971631205673" />
+        <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/catatanitem.xml" value="0.13677536231884058" />
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/catatanitems.xml" value="0.16869300911854104" />
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/fragment_catatan.xml" value="0.13677536231884058" />
@@ -21,7 +23,7 @@
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/fragment_info.xml" value="0.346875" />
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/fragment_info2.xml" value="0.346875" />
         <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/fragment_profil.xml" value="0.13677536231884058" />
-        <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/fragment_slide_info.xml" value="0.13677536231884058" />
+        <entry key="..\:/andro/Project/10119260UTS/app/src/main/res/layout/fragment_slide_info.xml" value="0.25" />
       </map>
     </option>
   </component>

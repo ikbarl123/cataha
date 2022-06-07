@@ -7,11 +7,13 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.alimuntung.a10119260uts.Presenter.AppActivity;
-
+// Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
 public class MainActivity extends AppCompatActivity {
     private int waktu_loading=4000;
 
-    //4000=4 detik
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                //setelah loading maka akan langsung berpindah ke home activity
                 Intent home=new Intent(MainActivity.this, AppActivity.class);
                 startActivity(home);
                 finish();

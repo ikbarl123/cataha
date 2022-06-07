@@ -10,11 +10,9 @@ import android.view.ViewGroup;
 
 import com.alimuntung.a10119260uts.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link SlideInfoFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+// Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
 public class SlideInfoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

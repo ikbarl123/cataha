@@ -8,3 +8,6 @@ public interface ICatatanQuery {
     public boolean update(Catatan catatan);
     public boolean delete(String id);
 }
+// Ikbar Laudza Alviansyah
+// IF-7
+// 10119260

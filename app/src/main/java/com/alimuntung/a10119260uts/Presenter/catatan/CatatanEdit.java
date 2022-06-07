@@ -20,7 +20,9 @@ import java.nio.charset.Charset;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
-
+// Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
 
 public class CatatanEdit extends AppCompatActivity implements Serializable {
     private FloatingActionButton btnBack,btnSave;

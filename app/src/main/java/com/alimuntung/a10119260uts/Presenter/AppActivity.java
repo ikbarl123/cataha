@@ -12,9 +12,13 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.alimuntung.a10119260uts.databinding.ActivityAppBinding;
-
+// Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
 public class AppActivity extends AppCompatActivity {
-
+    // Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
     private ActivityAppBinding binding;
 
     @Override

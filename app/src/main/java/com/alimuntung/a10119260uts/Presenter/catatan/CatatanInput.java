@@ -18,7 +18,9 @@ import java.nio.charset.Charset;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
-
+// Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
 public class CatatanInput extends AppCompatActivity {
     private FloatingActionButton btnBack,btnSave;
     private EditText textCatatan,textJudul,textKategori;
@@ -26,7 +28,9 @@ public class CatatanInput extends AppCompatActivity {
     private String tanggalskrg;
     private ICatatanQuery catatanInterface;
 
-
+    // Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
