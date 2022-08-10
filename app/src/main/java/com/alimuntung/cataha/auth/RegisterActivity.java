@@ -29,6 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         auth = FirebaseAuth.getInstance();
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_register);
         edtEmail = findViewById(R.id.username);
         edtPassword = findViewById(R.id.password);
@@ -55,7 +56,7 @@ public class RegisterActivity extends AppCompatActivity {
                 if (password != conpass){
                     Toast.makeText(RegisterActivity.this,"Password tidak sama",Toast.LENGTH_SHORT ).show();
                 }
-
+                else {
                 //    progressBar.setVisibility(View.VISIBLE);
 
                 auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(RegisterActivity.this,
@@ -72,7 +73,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 }
                             }
                         });
-            }
+            }}
         });
     }
 
