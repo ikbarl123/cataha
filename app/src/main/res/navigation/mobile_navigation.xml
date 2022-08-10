@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_catatan"
-        android:name="com.alimuntung.a10119260uts.Presenter.catatan.CatatanFragment"
+        android:name="com.alimuntung.cataha.Presenter.catatan.CatatanFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_catatan" />
 
     <fragment
         android:id="@+id/navigation_profil"
-        android:name="com.alimuntung.a10119260uts.Presenter.profil.ProfilFragment"
+        android:name="com.alimuntung.cataha.Presenter.profil.ProfilFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_profil"/>
 
     <fragment
         android:id="@+id/navigation_info"
-        android:name="com.alimuntung.a10119260uts.Presenter.info.InfoFragment"
+        android:name="com.alimuntung.cataha.Presenter.info.InfoFragment"
         android:label="@string/fragment_info"
         tools:layout="@layout/fragment_info" />
 
