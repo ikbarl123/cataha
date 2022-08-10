@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "308537862281",
+    "project_id": "cataha-321d0",
+    "storage_bucket": "cataha-321d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308537862281:android:a7e0b6ea310e5e8322fe58",
+        "android_client_info": {
+          "package_name": "com.alimuntung.cataha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308537862281-g2f2heeqvn3nv6961s67njqvndp37crh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGCdqaLZ8BmA56zSbYvGIKr7fxOKFNAfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308537862281-g2f2heeqvn3nv6961s67njqvndp37crh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
