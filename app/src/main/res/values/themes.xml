@@ -18,7 +18,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-
+    <!-- Milik ikbar 1.0.1.1.@9.2.6.0-->
     <style name="Theme.Cataha.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Cataha.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

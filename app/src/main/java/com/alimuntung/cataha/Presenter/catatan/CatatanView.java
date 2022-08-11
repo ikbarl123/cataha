@@ -34,6 +34,9 @@ public class CatatanView extends AppCompatActivity implements Serializable {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_catatan_view);
         getSupportActionBar().hide();
+        if (!getPackageName().equals("com."+"alim"+"unt"+"un"+"g.ca"+"taha")){
+            System.exit(0);
+        }
 
         catatan = (Catatan) getIntent().getSerializableExtra("catatan");
         tv_tanggal=  findViewById(R.id.tv_viewtanggal);

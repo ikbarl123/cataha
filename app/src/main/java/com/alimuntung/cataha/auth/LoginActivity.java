@@ -27,12 +27,12 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         auth = FirebaseAuth.getInstance();
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);// 101.192.60
         getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
         btnRegister = findViewById(R.id.btn_register);
         btnRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
+            @Override// 101.192.60
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
                 startActivity(intent);

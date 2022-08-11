@@ -24,7 +24,7 @@ import java.util.Random;
 public class CatatanInput extends AppCompatActivity {
     private FloatingActionButton btnBack,btnSave;
     private EditText textCatatan,textJudul,textKategori;
-    private TextView tv_tanggal;
+    private TextView tv_tanggal;// 101.192.60
     private String tanggalskrg;
     private ICatatanQuery catatanInterface;
 
@@ -49,7 +49,7 @@ public class CatatanInput extends AppCompatActivity {
 
         tv_tanggal=findViewById(R.id.tv_tanggal);
         tv_tanggal.setText(tanggalskrg);
-        btnBack = findViewById(R.id.saveButton);
+        btnBack = findViewById(R.id.saveButton);// 101.192.60
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

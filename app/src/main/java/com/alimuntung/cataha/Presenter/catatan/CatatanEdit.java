@@ -43,8 +43,11 @@ public class CatatanEdit extends AppCompatActivity implements Serializable {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (!getPackageName().equals("com.alim"+"untung.c"+"at"+"ah"+"a")){
+                    System.exit(0);
+                } else {
                 Toast.makeText(CatatanEdit.this,"kembali Succes",Toast.LENGTH_SHORT ).show();
-                finish();
+                finish();}
             }
         });
 

@@ -16,6 +16,7 @@ public class CatatanQuery extends SQLiteOpenHelper implements ICatatanQuery {
     @Override
     public void onCreate(SQLiteDatabase sql) {
     sql.execSQL("Create Table t_catatan(id TEXT, tanggal TEXT, catatan TEXT, judul TEXT, kategori TEXT)");
+
     }
 
     @Override

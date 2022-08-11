@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/andro/Project/cataha/app/src/main/res/layout/activity_login.xml" value="0.175" />
+        <entry key="..\:/andro/Project/cataha/app/src/main/res/layout/activity_main.xml" value="0.14266304347826086" />
         <entry key="..\:/andro/Project/cataha/app/src/main/res/layout/activity_register.xml" value="0.175" />
+        <entry key="..\:/andro/Project/cataha/app/src/main/res/layout/fragment_slide_info.xml" value="0.34270833333333334" />
+        <entry key="..\:/andro/Project/cataha/app/src/main/res/menu/bottom_nav_menu.xml" value="0.34270833333333334" />
       </map>
     </option>
   </component>

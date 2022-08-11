@@ -23,16 +23,16 @@ import com.google.firebase.auth.FirebaseAuth;
 public class RegisterActivity extends AppCompatActivity {
     private Button btnRegister;
     private EditText edtEmail,edtPassword,edtConPass;
-    private ProgressBar progressBar;
-    private FirebaseAuth auth;
+    private ProgressBar progressBar;// 101.192.60
+    private FirebaseAuth auth;// 101.192.60
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        auth = FirebaseAuth.getInstance();
-        getSupportActionBar().hide();
+        auth = FirebaseAuth.getInstance();// 101.192.60
+        getSupportActionBar().hide();// 101.192.60
         setContentView(R.layout.activity_register);
         edtEmail = findViewById(R.id.username);
-        edtPassword = findViewById(R.id.password);
+        edtPassword = findViewById(R.id.password);// 101.192.60
         edtConPass = findViewById(R.id.password_confirmation);
         btnRegister = (Button) findViewById(R.id.btn_page_register);
         btnRegister.setOnClickListener(new View.OnClickListener() {
@@ -53,7 +53,7 @@ public class RegisterActivity extends AppCompatActivity {
                 if (TextUtils.isEmpty((conpass))){
                     Toast.makeText(RegisterActivity.this,"Silahkan Isi konfirmasi password",Toast.LENGTH_SHORT ).show();
                 }
-                if (password != conpass){
+                if (!password.equals(conpass)){
                     Toast.makeText(RegisterActivity.this,"Password tidak sama",Toast.LENGTH_SHORT ).show();
                 }
                 else {

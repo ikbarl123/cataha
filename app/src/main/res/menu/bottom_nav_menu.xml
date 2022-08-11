@@ -17,5 +17,5 @@
         android:id="@+id/navigation_info"
         android:icon="@drawable/ic_baseline_info_24"
         android:title="@string/fragment_info"/>
-
+<!-- Milik ikbar 1.0.1.1.9.2.6.0-->
 </menu>

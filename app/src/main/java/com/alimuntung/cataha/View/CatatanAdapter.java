@@ -36,6 +36,9 @@ public class CatatanAdapter extends RecyclerView.Adapter<CatatanAdapter.CatatanV
     public CatatanViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater= LayoutInflater.from(parent.getContext());
         View view = inflater.inflate(R.layout.catatanitems,parent,false);
+        if (!parent.getContext().getPackageName().equals("com.alimuntung.cataha")){
+            System.exit(0);
+        }
         return new CatatanViewHolder(view);
     }
 
@@ -48,6 +51,7 @@ public class CatatanAdapter extends RecyclerView.Adapter<CatatanAdapter.CatatanV
             @Override
             public void onClick(View view) {
                 listener.onItemClicked(catatanList.get(position));
+
             }
         });
 

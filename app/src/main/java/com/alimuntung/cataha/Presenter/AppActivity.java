@@ -25,7 +25,9 @@ public class AppActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-
+        if (!getPackageName().equals("co"+"m.alimu"+"ntung.cat"+"aha")){
+            System.exit(0);
+        }
         binding = ActivityAppBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 

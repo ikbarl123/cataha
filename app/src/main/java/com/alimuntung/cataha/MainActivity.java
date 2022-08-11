@@ -26,10 +26,12 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-
+                if (!getPackageName().equals("com"+".al"+"imun"+"tung"+".ca"+"taha")){
+                    System.exit(0);
+                } else {
                 Intent home=new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(home);
-                finish();
+                finish();}
 
             }
         },waktu_loading);

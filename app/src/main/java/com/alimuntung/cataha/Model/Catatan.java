@@ -5,10 +5,10 @@ import java.util.Date;
 
 public class Catatan implements Serializable {
     private String id;
-    private String tanggal;
-    private String catatan;
+    private String tanggal;// 101.192.60
+    private String catatan;// 101.192.60
     private String judul;
-    private String kategori;
+    private String kategori;// 101.192.60
 
     public Catatan(String id, String tanggal,  String catatan, String judul, String kategori){
         this.id=id;

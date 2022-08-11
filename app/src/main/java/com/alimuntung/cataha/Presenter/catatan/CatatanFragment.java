@@ -51,6 +51,7 @@ public class CatatanFragment extends Fragment implements CatatanListener  {
                         cursor.getString(1),
                         cursor.getString(2),
                         cursor.getString(3),
+                        // 101.192.60
                         cursor.getString(4)
                 );
                 Log.i("tulisan",catatan.getKategori().toString());
