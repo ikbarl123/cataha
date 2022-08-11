@@ -44,6 +44,10 @@ public class RegisterActivity extends AppCompatActivity {
                 if (TextUtils.isEmpty((email))){
                     Toast.makeText(RegisterActivity.this,"Silahkan Isi Email",Toast.LENGTH_SHORT ).show();
                 }
+
+                // Ikbar Laudza Alviansyah
+// IF-7
+// 10119260
                 if (TextUtils.isEmpty((password))){
                     Toast.makeText(RegisterActivity.this,"Silahkan isi password",Toast.LENGTH_SHORT ).show();
                 }
